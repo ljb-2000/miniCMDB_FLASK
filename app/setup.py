@@ -4,7 +4,10 @@
 'this is a simple CMDB'
 
 __author__='anbaoyong'
-
+#create mysql tabel
+'''
+create table `IP_list` (`ID` int(11) not null auto_increment  primary key, `IP` varchar(200) not null, `ClusterName` varchar(200) not null, `Server` varchar(200) not null, `Type`  varchar(200) not null, `Operator` varchar(200) not null, `Monitor` varchar(200) not null, `Contact` varchar(200) not null, `Status` varchar(200) not null ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+'''
 
 import MySQLdb
 import json
@@ -59,7 +62,7 @@ def login():
     if request.method == 'POST':
         username = request.form.get('username')
         passwd = request.form.get('passwd')
-        if username == "admin" or  username == "aby":
+        if username == "anbaoyong" or  username == "admin":
             session[username] = username
             return redirect('/html')
 
