@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HADOOP IP LIST</title>
+  <link href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ url_for('static',filename='css/jquery.fileupload-ui.css') }}" rel="stylesheet">
+   <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+   <script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+   <script src="{{ url_for('static',filename='js/jquery.iframe-transport.js')  }}"></script>
+   <script src="{{ url_for('static',filename='js/vendor/jquery.ui.widget.js')  }}"></script>
+   <script src="{{ url_for('static',filename='js/jquery.fileupload.js')  }}"></script>
+<style>
+	 .modify-btn{
+       cursor: pointer;
+       color: blue;
+     }
+     #login{
+        margin-top: 180px;
+     
+     }
+</style>
+</head>
+<body>
+{% block body %}
+{% endblock %}
+</body>
+</html>

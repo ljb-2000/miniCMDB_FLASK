@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block body %}
+ <form id="dns_id" method='post' action="sub" class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+  <!--
+    <input type="text" class="form-control" placeholder="请输入IP" name="ip" required="required">
+ -->
+ <textarea id="ips" rows="5" name="ips" class="col-xs-8"></textarea>
+ </div>
+  <button type="submit" class="btn btn-primary">提交</button>
+</form>
+// <script>
+//    $('#dns_id').on('submit',function(){
+//        var str = $('#s_id').serialize()
+//        var url = '/search?' + str
+//        $.get(url,function(res){
+//           //$('#listTable').html(res)
+//            alert(res)
+//        })
+//        return false
+//    })
+//</script>
+{% endblock %}
